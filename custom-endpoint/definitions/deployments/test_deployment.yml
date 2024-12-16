@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: simple-gpu-test
+endpoint_name: my-endpoint
+model:
+  path: ../../model/dummy/
+code_configuration:
+  code: ../../api
+  scoring_script: score.py
+environment: azureml:minimal_gpu_inf_docker@latest
+instance_type: Standard_NC4as_T4_v3
+instance_count: 1
+environment_variables:
+  CHRONOS_MODEL_NAME: "amazon/chronos-t5-tiny"

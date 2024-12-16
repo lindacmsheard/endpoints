@@ -1,0 +1,4 @@
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
+name: minimal_gpu_inf_docker
+build:
+  path: ../_docker_contexts/minimal-gpu-inference/

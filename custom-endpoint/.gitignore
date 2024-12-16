@@ -1,0 +1,4 @@
+.azure
+.env
+.amlignore
+*.amltmp

@@ -1,0 +1,13 @@
+POST https://my-endpoint.uksouth.inference.ml.azure.com/score HTTP/1.1
+content-type: application/json
+Authorization: Bearer <your api token>
+azureml-model-deployment: simple-gpu-test
+
+{
+    "data": [1,2,3,4],
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+
+###
+
